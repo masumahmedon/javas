@@ -1,0 +1,49 @@
+/*font-link start*/
+@font-face{
+	src: url(../fonts/lato/lato-medium.ttf);
+	font-family:lato-medium.ttf;
+}
+@font-face{
+	src: url(../fonts/lato/lato-regular.ttf);
+	font-family:lato-regular.ttf;
+}
+@font-face{
+	src: url(../fonts/roboto/Roboto-Regular.ttf);
+	font-family:Roboto-Regular.ttf;
+}
+
+/*font-link end*/
+/*common css*/
+/*body*/
+body{
+	font-family: roboto;
+	font-size: 16px;
+	font-weight: 400;
+	color: #8e8e8e;
+}
+/* header start */
+header{
+}
+.h_h2{
+    font-family: loto;
+    font-size: 30px;
+    font-weight: 400;
+    color: #333333;
+    text-transform: uppercase;
+}
+.menu{}
+.menu ul li a{
+    padding: 0px 15px !important;
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #8e8e8e !important; */
+    text-transform: uppercase;
+}
+.menu ul li a:hover{
+	color: #333333;
+
+}
+/* header end */
+.mb_200{
+    margin-bottom: 200px;
+}

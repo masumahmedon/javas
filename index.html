@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript</title>
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!--css link-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <!--header start-->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <h2 class="h_h2">Nipro Agency</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nbc" aria-controls="nbc" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu" id="nbc">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Conatct</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn s_btn" data-bs-toggle="modal" data-bs-target="#searchmodal">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade smodal_width" id="searchmodal" tabindex="-1" aria-labelledby="searchmodalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="modal_box">
+                          <div class="row">
+                            <div class="col-9">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            </div>
+                            <div class="col-3 text-center">
+                              <button class="btn btn-outline-success" type="submit">Search</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--header end-->
+    <div class="container mb_200">
+      <!-- text_change -->
+      <div class="text_change">
+        <h2 class="text-primary">Click the button to change the text</h2>
+        <button type="button" class="btn btn-dark" onclick="textChange()">text change</button>
+        <h1 id="h2" class="text-primary">Lorem ipsum dolor sit amet.</h1>
+      </div>
+      <hr>
+      <!-- date_show -->
+      <h2 class="text-danger">Click the button to show the date</h2>
+      <button type="button" class="btn btn-danger" onclick="showDate()">show date</button>
+      <h2 id="d_h2" class="text-danger">Date</h2>
+
+      <hr>
+
+      <h1 class="text-primary">Click the button to ON/OFF the bulb</h1>
+      <button onclick="bulbOn()" type="button" class="btn btn-success">Bulb on</button>
+      <button onclick="bulbOff()"type="button" class="btn btn-dark">Bulb off</button>
+      <img id="img" src="images/pic_off.gif" alt="">
+
+      <hr>
+      <h1>Click the button to font change</h1>
+      <button onclick="fontChange()" class="btn btn-dark">Font Change</button>
+      <h2 id="f_h2">Lorem ipsum dolor, sit.</h2>
+      <hr>
+
+      <h1>Click the button to font change</h1>
+      <button onclick="fontColor()" class="btn btn-success">Font Color</button>
+      <h2 id="c_h2">Lorem ipsum dolor, sit.</h2>
+      <hr>
+      <h1>Click the button to show/hide the text</h1>
+      <button onclick="show()" class="btn btn-dark">Show</button>
+      <button onclick="hide()" class="btn btn-dark">Hide</button>
+
+      <h2 id="s_h2">Lorem, ipsum dolor sit.</h2>
+
+      <hr>
+      <h1>Click the button to text-document.Write</h1>
+        <button onclick="writeOutput()" class="btn btn-danger">DWrite</button>
+    </div>
+    
+    
+    <!--script-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
